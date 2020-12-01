@@ -1,0 +1,338 @@
+@font-face{
+    font-family: Barlow-ExtraLigh;
+    src: url("./fonts/Barlow/Barlow-ExtraLight.otf")
+}
+
+@font-face{
+    font-family: Barlow-Light;
+    src: url("./fonts/Barlow/Barlow-Light.otf")
+}
+
+@font-face{
+    font-family: Barlow-Bold;
+    src: url("./fonts/Barlow/Barlow-Bold.otf")
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    overflow-x: hidden;
+}
+
+header{
+    position: absolute;
+    width: 100%;
+    padding: 2em;
+}
+
+header .logo{
+    width: 10em;
+    vertical-align: middle;
+    float: left;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    height: 100vh;
+    width: 100%;
+    font-family: Barlow-Light;
+    color: #2A4A5C;
+}
+
+.img{
+    background-image: url("./images/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media only screen and (max-width: 600px) {
+    main{
+        display: inline-block;
+    }
+
+    .img{
+        display: none;
+    }
+
+    header{
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        background-color: #3698FB;
+    }
+}
+
+
+.authorization{
+    padding: 10vh 4em;
+}
+
+.authorization .title h3{
+    color: #7B8A92;
+}
+
+.authorization .buttons{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 2em;
+    margin: 8vh 0;
+}
+
+.authorization .buttons button{
+    color: #EEEEEE;
+    border-radius: 0;
+    border: none;
+    padding: 1em;
+    text-align: center;
+    font-size: 0.9em;
+    cursor: pointer;
+}
+
+.authorization .buttons button:focus{
+    outline: none;
+    opacity: 0.8;
+}
+
+.authorization .buttons button img{
+    width: 1.2em;
+    vertical-align: middle;
+    float: left;
+}
+
+.facebook{
+    background-color: #255A9B;
+}
+
+.linkedin{
+    background-color: #0076B6;
+}
+
+.limiter{
+    padding: 0 5em;
+    text-align: center;
+}
+
+.limiter .line{
+    display: inline-block;
+    width: 7em;
+    height: 1px;
+    background-color: #EEEEEE;
+    vertical-align: middle;
+}
+
+.limiter span{
+    font-size: 0.7em;
+    font-family: Barlow-Bold;
+    color: #7B8A92;
+    margin: 1em;
+}
+
+
+.authorization .inputs{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 2em;
+    margin: 8vh 0;
+}
+
+.authorization .inputs label{
+    border-radius: 0;
+    border: #EEEEEE solid 1px;
+    padding: 0.5em;
+    text-align: left;
+    font-family: Barlow-Light;
+    font-size: 0.9em;
+}
+
+.authorization .inputs label:hover{
+    border-radius: 0;
+    border-left: #3698FB solid 2px;
+}
+
+.authorization .inputs label h4{
+    margin:0;
+    color: #AFAFAF;
+}
+
+.authorization .inputs input{
+    margin: 0.2em 0;
+    text-align: left;
+    font-size: 0.9em;
+    border: none;
+    width: 100%;
+    font-size: 1.2em;
+    font-family: Barlow-Light;
+    font-weight: bold;
+    outline: none;
+    color: #7B8A92;
+}
+
+.authorization .inputs input:focus{
+    color: #2A4A5C;
+}
+
+.authorization .investor-title h4{
+    color: #7B8A92;
+}
+
+.authorization .radios{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    grid-gap: 1em;
+    margin: 8vh 0;
+    text-align: left;
+    font-family: Barlow-Light;
+    font-size: 0.9em;
+    width: 100%;
+}
+
+.authorization .radios h3 {
+    display: inline;
+}
+
+.authorization .radios .info {
+    display: inline-block;
+    border: #7B8A92 solid 1px;
+    color: #7B8A92;
+    border-radius: 0.6em;
+    width: 1.2em;
+    height:  1.2em;
+    vertical-align: middle;
+    text-align: center;
+    font-family: serif;
+    transform: scale(0.7, 0.7);
+}
+
+.authorization .prompt {
+    display: inline-block;
+    width: 16em;
+    border: #EEEEEE solid 1px;
+    padding: 0.5em;
+    color: #7B8A92;
+    font-family: Barlow-ExtraLigh;
+    border-radius: 4px;
+    box-shadow: 1px 0 4px #EEEEEE, -1px 0 4px #EEEEEE,  0 1px #EEEEEE;
+}
+
+.authorization .agreement {
+    margin: 8vh 0;
+    color: #7B8A92;
+    font-family: Barlow-ExtraLigh;
+}
+
+.authorization .agreement a{
+    font-family: Barlow-ExtraLigh;
+    color:  #3698FB;
+}
+
+.authorization .create-account{
+    color: #EEEEEE;
+    border-radius: 5px;
+    border: none;
+    padding: 1em;
+    text-align: center;
+    font-size: 0.9em;
+    cursor: pointer;
+    background-color: #3698FB;
+    width: 16em;
+}
+
+.authorization .create-account:focus{
+    outline: none;
+    border: none;
+    opacity: 0.8;
+}
+
+
+
+input[type="checkbox"]:checked, 
+input[type="checkbox"]:not(:checked), 
+input[type="radio"]:checked, 
+input[type="radio"]:not(:checked) 
+{
+    position: absolute;
+    left: -9999px;
+}
+
+input[type="checkbox"]:checked + label, 
+input[type="checkbox"]:not(:checked) + label, 
+input[type="radio"]:checked + label, 
+input[type="radio"]:not(:checked) + label {
+    display: inline-block;
+    position: relative;
+    padding-left: 28px;
+    line-height: 20px;
+    cursor: pointer;
+}
+
+input[type="checkbox"]:checked + label:before, 
+input[type="checkbox"]:not(:checked) + label:before,
+input[type="radio"]:checked + label:before, 
+input[type="radio"]:not(:checked) + label:before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #AFAFAF;
+    background-color: #ffffff;
+}
+
+input[type="checkbox"]:checked + label:before, 
+input[type="checkbox"]:not(:checked) + label:before {
+    border-radius: 2px;
+}
+
+input[type="radio"]:checked + label:before, 
+input[type="radio"]:not(:checked) + label:before {
+    border-radius: 100%;
+}
+
+input[type="checkbox"]:checked + label:after, 
+input[type="checkbox"]:not(:checked) + label:after, 
+input[type="radio"]:checked + label:after, 
+input[type="radio"]:not(:checked) + label:after {
+    content: "";
+    position: absolute;
+}
+
+input[type="checkbox"]:checked + label:after, 
+input[type="checkbox"]:not(:checked) + label:after {
+    left: 4px;
+    top: 2px;
+    width: 4px;
+    height: 10px;
+    border-radius: 1px;
+    border-left: 3px solid fuchsia;
+    border-bottom: 3px solid fuchsia;
+    transform: rotate(-45deg);
+}
+
+input[type="radio"]:checked + label:after, 
+input[type="radio"]:not(:checked) + label:after {
+    left: 0px;
+    top: 0px;
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+    background-color: white;
+    border: #3698FB solid 3px;
+}
+
+input[type="checkbox"]:not(:checked) + label:after, 
+input[type="radio"]:not(:checked) + label:after {
+    opacity: 0;
+}
+
+input[type="checkbox"]:checked + label:after, 
+input[type="radio"]:checked + label:after {
+    opacity: 1;
+}
