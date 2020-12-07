@@ -3,145 +3,80 @@
     <head>
         <title>css-task</title>
         <meta name="viewport" content="width=divice-width; initial-scale=1"/>
-        <link rel="stylesheet" href="./index.css"/>
-        <link rel="stylesheet" href="./index.css"/>
+        <link rel="stylesheet" href="./style.css"/>
     </head>
-    <script type="text/javascript">
-        window.setTimeout(
-            () => {
-                let isGood = prompt("Хорошо?:)\n1 - Да\n2 - Не очень");
-                (isGood === "1") ? alert(":)") : alert(":(");
-            },
-            5000
-        );
-    </script>
     <body>
-        <header class="header">
-            <div class="container-positioner header__container-positioner">
-                <!-- Переключатель сайдбара -->
-                <div class="sidebar-toggle header__sidebar-toggle">
-                    <button class="button-icon">
-                        <img  src="./images/menu.svg"  alt="Меню">
-                    </button>
-                </div>
-                <!-- Лого -->
-                <div class="logo header__logo">
-                    <img src="./images/logo.svg" alt="Логотип">
-                </div>
-                <!-- Контакты -->
-                <div class="contacts header__contacts">
-                    <button class="button-icon contacts__button-icon">
-                        <img  src="./images/phone.svg"  alt="Позвонить">
-                    </button>
-                    <button class="button-icon contacts__button-icon">
-                        <img  src="./images/mes.svg"  alt="Написать">
-                    </button>
-                    <button class="button-icon contacts__button-icon">
-                        <img  src="./images/user.svg"  alt="Юзер">
-                    </button>
-                </div>
-                <!-- Действия -->
-                <div class="actions header__actions">
-                    <button class="button-icon actions__button-icon">
-                        <img  src="./images/instruments.svg"  alt="Оставить заявку">
-                    </button>
-                    <button class="button-icon actions__button-icon">
-                        <img  src="./images/contacts.svg"  alt="Статус ремонта">
-                    </button>
-                </div>
-            </div>
-        </header>
-        <main class="main">
-            <div class="title main__title">
-                <div class="container-positioner main__title_container-positioner">
-                    <h1 class="main__title_text">Услуги и сервисы</h1>
-                    <!-- Меню -->
-                    <ul class="menu main__menu">
-                        <li class="option menu__option">
-                            <a
-                                class="link option__link"
-                                href="https://duckduckgo.com/?q=%D0%9E%D1%81%D1%82%D0%B0%D0%B2%D0%B8%D1%82%D1%8C+%D0%B7%D0%B0%D1%8F%D0%B2%D0%BA%D1%83&t=h_&ia=web"
-                            >
-                                Оставить заявку
-                            </a>
-                            <div class="icon option__icon">
-                                <img  src="./images/instruments.svg"  alt="Оставить заявку">
-                            </div>
-                        </li>
-                        <li class="option menu__option">
-                            <a
-                                class="link option__link"
-                                href="https://duckduckgo.com/?q=%D0%A1%D1%82%D0%B0%D1%82%D1%83%D1%81+%D1%80%D0%B5%D0%BC%D0%BE%D0%BD%D1%82%D0%B0&t=h_&ia=web"
-                            >
-                                Статус ремонта
-                            </a>
-                            <div class="icon option__icon">
-                                <img  src="./images/contacts.svg"  alt="Статус ремонта">
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Навы -->
-
-            <nav class="navs main__navs">
-                <div class="container-positioner navs__container-positioner">
-                    <button class="nav main__navs_item main__navs_item--active">
-                        <span class="nav__text">
-                            Ремонтируемые устройства
-                        </span>
-                    </button>
-                    <button class="nav main__navs_item">
-                        <span class="nav__text">
-                            Дополнительные услуги
-                        </span>
-                    </button>
-                    <button class="nav main__navs_item">
-                        <span class="nav__text">
-                            Цены на услуги
-                        </span>
-                    </button>
-                    <button class="nav main__navs_item">
-                        <span class="nav__text">
-                            Адреса сервисных центров
-                        </span>
-                    </button>
-                    <button class="nav main__navs_item">
-                        <span class="nav__text">
-                            Специальные цены
-                        </span>
-                    </button>
-                    <button class="nav main__navs_item">
-                        <span class="nav__text">
-                            Отзывы
-                        </span>
-                    </button>
-                    <button class="nav main__navs_item">
-                        <span class="nav__text">
-                            Адреса сервисных центров
-                        </span>
-                    </button>
-                </div>
-            </nav>
-
-            <!-- Контент -->
-            
-            <article class="about main__about">
-                <section class="about__description">
-                    <div class="about__text">
-                        <p>Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
-                        <p>Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</p>
+        <div class="wrapper">
+            <header class="header">
+                <div class="container-positioner">
+                    <div class="sidebar-toggle header__sidebar-toggle">
+                        <button class="button-icon button-icon--menu"></button>
                     </div>
-                    <div class="continuation about__continuation">
-                        <div class="continuation__icon">
-                            <img  src="./images/bottom.svg"  alt="Меню">
+                    <div class="logo header__logo"></div>
+                    <div class="contacts header__contacts">
+                        <button class="button-icon button-icon--phone"></button>
+                        <button class="button-icon button-icon--chat"></button>
+                        <button class="button-icon button-icon--user"></button>
+                    </div>
+                    <div class="actions header__actions">
+                        <button class="button-icon button-icon--instruments"></button>
+                        <button class="button-icon button-icon--contacts"></button>
+                    </div>
+                </div>
+            </header>
+            <main class="main">
+                <div class="main__header">
+                    <div class="container-positioner">
+                        <h1 class="main__header--text">Услуги и сервисы</h1>
+                        <menu class="menu main__menu">
+                            <li class="menu__option">
+                                <a class="menu__link" href="#">
+                                    Оставить заявку
+                                </a>
+                                <i class="button-icon button-icon--instruments"></i>
+                            </li>
+                            <li class="menu__option">
+                                <a class="menu__link" href="#">
+                                    Статус ремонта
+                                </a>
+                                <i class="button-icon button-icon--contacts"></i>
+                            </li>
+                        </menu>
+                    </div>
+                </div>
+                <ul class="navigation main__navigation">
+                    <li class="navigation__item navigation__item--active">
+                        Ремонтируемые бренды
+                    </li>
+                    <li class="navigation__item">
+                        Ремонтируемые устройства
+                    </li>
+                    <li class="navigation__item">
+                        Цены на услуги
+                    </li>
+                    <li class="navigation__item">
+                        Адреса сервисных центров
+                    </li>
+                    <li class="navigation__item">
+                        Специальные цены
+                    </li>
+                    <li class="navigation__item">
+                        Отзывы
+                    </li>
+                </ul>
+                <article class="about main__about">
+                    <section class="about__description">
+                        <div class="about__text">
+                            <p>Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
+                            <p>Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</p>
                         </div>
-                        <div class="continuation__text">Читать далее</div>
-                    </div>
-                </section>
-                <div class="about__image"></div>
-            </article>
-        </main>
+                        <button class="continuation about__continuation">
+                            Читать далее
+                        </button>
+                    </section>
+                    <div class="about__image"></div>
+                </article>
+            </main>
+        </div>
     </body>
 </html>
