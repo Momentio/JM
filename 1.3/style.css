@@ -53,39 +53,37 @@ body{
     align-items: center;
 }
 
-.button-icon{
+.button-icon::after{
+    display: inline-block;
     height: 40px;
     width: 40px;
     background: #FF3E79;
     padding: 10px;
     border-radius: 20px;
-    border: none;
-    outline: none;
-    cursor: pointer;
     box-sizing: border-box;
 }
 
-.button-icon--menu::before{
+.button-icon--menu::after{
     content: url("./images/menu.svg");
 }
 
-.button-icon--chat::before{
+.button-icon--chat::after{
     content: url("./images/chat.svg");
 }
 
-.button-icon--user::before{
+.button-icon--user::after{
     content: url("./images/user.svg");
 }
 
-.button-icon--phone::before{
+.button-icon--phone::after{
     content: url("./images/phone.svg");
 }
 
-.button-icon--instruments::before{
+.button-icon--instruments::after{
     content: url("./images/instruments.svg");
 }
 
-.button-icon--contacts::before{
+.button-icon--contacts::after{
     content: url("./images/contacts.svg");
 }
 
@@ -150,7 +148,7 @@ body{
     box-sizing: border-box;
 }
 
-.main__header--text{
+.main__header h1{
     font-size: 28px;
     letter-spacing: -1px;
     line-height: 40px;
@@ -176,12 +174,15 @@ body{
     margin-right: 32px;
 }
 
+.menu__option.button-icon::after{
+    margin-left: 9px;
+}
+
 .menu__option:nth-last-child(1){
     margin-right: 0px;
 }
 
 .menu__link{
-    margin-right: 9px;
     color:#1B1C21;
     font-weight: 500;
     font-size: 16px;
@@ -217,6 +218,9 @@ body{
     border: 2px dotted rgba(0, 0, 0, 0);
     list-style: none;
     box-sizing: border-box;
+}
+
+.navigation__link{
     font-weight: 500;
     vertical-align: middle;
     color: #7E7E82;
@@ -224,6 +228,7 @@ body{
     letter-spacing: -0.2px;
     white-space: nowrap;
     line-height: 24px;
+    text-decoration: none;
 }
 
 .navigation__item:hover{
@@ -266,6 +271,7 @@ body{
     padding: 0 8px;
     outline: none;
     border: none;
+    font-family: "TT Lakes", "Roboto", "Arial";
     font-size: 16px;
     line-height: 24px;
     letter-spacing: -0.2px;
