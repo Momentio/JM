@@ -40,10 +40,19 @@ body{
     white-space: nowrap;
     line-height: 24px;
     text-decoration: none;
+    color: inherit;
 }
 
 .image{
     max-width: 100%;
+}
+
+.button{
+    outline: none;
+    border: none;
+    background: inherit;
+    cursor: pointer;
+    padding: 0;
 }
 
 /* icon */
