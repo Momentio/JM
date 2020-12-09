@@ -8,60 +8,52 @@
     <body>
         <div class="wrapper">
             <header class="header">
-                <div class="container-positioner">
-                    <div class="sidebar-toggle header__sidebar-toggle">
-                        <i class="button-icon button-icon--menu"></i>
-                    </div>
-                    <div class="logo header__logo"></div>
-                    <div class="contacts header__contacts">
-                        <i class="button-icon button-icon--phone"></i>
-                        <i class="button-icon button-icon--chat"></i>
-                        <i class="button-icon button-icon--user"></i>
-                    </div>
-                    <div class="actions header__actions">
-                        <i class="button-icon button-icon--instruments"></i>
-                        <i class="button-icon button-icon--contacts"></i>
-                    </div>
+                <div class="header__sidebar-toggle">
+                    <a class="icon icon--menu" href="#"></a>
+                </div>
+                <div class="header__logo"></div>
+                <div class="header__contacts">
+                    <a class="icon icon--phone" href="#"></a>
+                    <a class="icon icon--chat" href="#"></a>
+                    <a class="icon icon--user" href="#"></a>
+                </div>
+                <div class="header__actions">
+                    <a class="icon icon--instruments" href="#"></a>
+                    <a class="icon icon--contacts" href="#"></a>
                 </div>
             </header>
             <main class="main">
-                <div class="main__header">
-                    <div class="container-positioner">
-                        <h1>Услуги и сервисы</h1>
-                        <menu class="menu main__menu">
-                            <li class="menu__option button-icon button-icon--instruments">
-                                <a class="menu__link" href="#">
-                                    Оставить заявку
-                                </a>
-                            </li>
-                            <li class="menu__option button-icon button-icon--contacts">
-                                <a class="menu__link" href="#">
-                                    Статус ремонта
-                                </a>
-                            </li>
-                        </menu>
+                <div class="title main__title">
+                    <h1>Услуги и сервисы</h1>
+                    <div class="menu main__menu">
+                        <a class="link menu__item icon icon--instruments" href="#">
+                            Оставить заявку
+                        </a>
+                        <a class="link menu__item icon icon--contacts" href="#">
+                            Статус ремонта
+                        </a>
                     </div>
                 </div>
-                <ul class="navigation main__navigation">
-                    <li class="navigation__item navigation__item--active">
-                        <a class="navigation__link" href="#">Ремонтируемые бренды</a>
-                    </li>
-                    <li class="navigation__item">
-                        <a class="navigation__link" href="#">Ремонтируемые устройства</a>
-                    </li>
-                    <li class="navigation__item">
-                        <a class="navigation__link" href="#">Цены на услуги</a>
-                    </li>
-                    <li class="navigation__item">
-                        <a class="navigation__link" href="#">Адреса сервисных центров</a>
-                    </li>
-                    <li class="navigation__item">
-                        <a class="navigation__link" href="#">Специальные цены</a>
-                    </li>
-                    <li class="navigation__item">
-                        <a class="navigation__link" href="#">Отзывы</a>
-                    </li>
-                </ul>
+                <nav class="navigation main__navigation">
+                    <a class="link navigation__item navigation__item--active" href="#">
+                        Ремонтируемые бренды
+                    </a>
+                    <a class="link navigation__item" href="#">
+                        Ремонтируемые устройства
+                    </a>
+                    <a class="link navigation__item" href="#">
+                        Цены на услуги
+                    </a>
+                    <a class="link navigation__item" href="#">
+                        Адреса сервисных центров
+                    </a>
+                    <a class="link navigation__item" href="#">
+                        Специальные цены
+                    </a>
+                    <a class="link navigation__item" href="#">
+                        Отзывы
+                    </a>
+                </nav>
                 <article class="about main__about">
                     <section class="about__description">
                         <div class="about__text">
@@ -72,7 +64,7 @@
                             Читать далее
                         </button>
                     </section>
-                    <div class="about__image"></div>
+                    <div class="image about__image"></div>
                 </article>
             </main>
         </div>
