@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
     <head>
         <title>css-task</title>
         <meta name="viewport" content="width=divice-width; initial-scale=1"/>
@@ -7,17 +7,19 @@
     </head>
     <body>
         <div class="sidebar">
-            <div class="sidebar-header">
+            <div class="sidebar-header sidebar__sidebar-header">
                 <div class="sidebar-toggle sidebar-header__sidebar-toggle">
-                    <button class="button icon icon--close">
+                    <button class="button icon icon--close"></button>
                 </div>
-                <div class="logo sidebar-header__logo"></div>
+                <div class="logo sidebar-header__logo">
+                    <img src="images/logo.svg" alt="logo">
+                </div>
                 <div class="actions sidebar-header__actions">
                     <a class="icon icon--search" href="#"></a>
                 </div>
             </div>
-            <nav>
-                <ul class="sidebar-navigation sidebar__navigation">
+            <nav class="sidebar-navigation sidebar__navigation">
+                <ul class="sidebar-navigation__list">
                     <li class="sidebar-navigation__item sidebar-navigation__item--active">
                         <a class="link" href="#">
                             Ремонт техники
@@ -60,28 +62,26 @@
                     </li>
                 </ul>
             </nav>
-            <div class="contacts sidebar__contacts">
-                <a class="icon icon--phone" href="#"></a>
-                <a class="icon icon--chat" href="#"></a>
-                <a class="icon icon--user" href="#"></a>
-            </div>
+            <a class="icon icon--phone" href="#"></a>
+            <a class="icon icon--chat" href="#"></a>
+            <a class="icon icon--user" href="#"></a>
             <a href="mailto:mail@cps.com" class="sidebar__email link">mail@cps.com</a>
             <a href="tel:8-800-890-8900" class="sidebar__phone link">8 800 890 8900</a>
             <ul class="languages sidebar__languages">
                 <li class="languages__item languages__item--active">
-                    <a class="link" href="#">
+                    <button class="button">
                         RU
-                    </a>
+                    </button>
                 </li>
                 <li class="languages__item">
-                    <a class="link" href="#">
+                    <button class="button">
                         EN
-                    </a>
+                    </button>
                 </li>
                 <li class="languages__item">
-                    <a class="link" href="#">
+                    <button class="button">
                         CH
-                    </a>
+                    </button>
                 </li>
             </ul>
         </div>
