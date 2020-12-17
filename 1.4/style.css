@@ -98,8 +98,12 @@ body{
     padding: 0 24px;
     height: calc(100vh - 88px);
     overflow-y: auto;
+    overflow-x: hidden;
 }
 
+.sidebar__sidebar-main::-webkit-scrollbar {display:none;}
+.sidebar__sidebar-main::-moz-scrollbar {display:none;}
+.sidebar__sidebar-main::-ms-scrollbar {display:none;}
 
 
 /* sidebar-navigation */
