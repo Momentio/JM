@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>css-task</title>
+        <meta name="viewport" content="width=divice-width; initial-scale=1"/>
+        <link rel="stylesheet" href="./style.css"/>
+
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    </head>
+    <body onresize="initSwiper();">
+        <article class="brands">
+            <h2 class="brands__title">Ремонт техники различных брендов</h2>
+            <section class="brands-list brands__list">
+                <div class="swiper-container">
+                    <div
+                        id="brands-list"
+                        class="brands-list__container brands-list__container--height--min swiper-wrapper"
+                    >
+                        <div class="brands-item brands__item swiper-slide">
+                            <img class="brand-item__logo" src="./images/brands/Lenovo.png" alt="Lenovo">
+                            <a class="link brand-item__link"></a>
+                        </div>
+                        <div class="brands-item brands__item swiper-slide">
+                            <img class="brand-item__logo" src="./images/brands/Samsung.png" alt="Samsung">
+                            <a class="link brand-item__link"></a>
+                        </div>
+                        <div class="brands-item brands__item swiper-slide">
+                            <img class="brand-item__logo" src="./images/brands/Apple.png" alt="Apple">
+                            <a class="link brand-item__link"></a>
+                        </div>
+                        <div class="brands-item brands__item swiper-slide">
+                            <img class="brand-item__logo" src="./images/brands/ViewSonic.png" alt="ViewSonic">
+                            <a class="link brand-item__link"></a>
+                        </div>
+                        <div class="brands-item brands__item swiper-slide">
+                            <img class="brand-item__logo" src="./images/brands/Bosch.png" alt="Bosch">
+                            <a class="link brand-item__link"></a>
+                        </div>
+                        <div class="brands-item brands__item swiper-slide">
+                            <img class="brand-item__logo" src="./images/brands/HP.png" alt="HP">
+                            <a class="link brand-item__link"></a>
+                        </div>
+                        <div class="brands-item brands__item swiper-slide">
+                            <img class="brand-item__logo" src="./images/brands/Acer.png" alt="Acer">
+                            <a class="link brand-item__link"></a>
+                        </div>
+                        <div class="brands-item brands__item swiper-slide">
+                            <img class="brand-item__logo" src="./images/brands/Sony.png" alt="Sony">
+                            <a class="link brand-item__link"></a>
+                        </div>
+                        <div class="brands-item brands__item swiper-slide">
+                            <img class="brand-item__logo" src="./images/brands/Huawei.png" alt="Huawei">
+                            <a class="link brand-item__link"></a>
+                        </div>
+                        <div class="brands-item brands__item swiper-slide">
+                            <img class="brand-item__logo" src="./images/brands/Xiaomi.png" alt="Xiaomi">
+                            <a class="link brand-item__link"></a>
+                        </div>
+                        <div class="brands-item brands__item swiper-slide">
+                            <img class="brand-item__logo" src="./images/brands/Motorola.png" alt="Motorola">
+                            <a class="link brand-item__link"></a>
+                        </div>
+                        <div class="brands-item brands__item swiper-slide">
+                            <img class="brand-item__logo" src="./images/brands/Nokia.png" alt="Nokia">
+                            <a class="link brand-item__link"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <button
+                    id="brands__toggle-all"
+                    class="button toggle-all brands__toggle-all toggle-all--checked"
+                    onclick="toggleBrandsList();"
+                >Показать все</button>
+            </div>
+            </section>
+        </article>
+    </body>
+    <script type="text/javascript">
+        let fackedSwiper;
+
+        initSwiper();
+        
+        function initSwiper() {
+            if(Number(document.body.offsetWidth) < 768){
+                if(!fackedSwiper){
+                    fackedSwiper = new Swiper('.swiper-container', {
+                        pagination: {
+                            el: '.swiper-pagination',
+                        },
+                    });
+
+                }else{
+                    fackedSwiper.attachEvents();
+                }
+
+            }else{
+                if(fackedSwiper){
+                    fackedSwiper.detachEvents();
+                    fackedSwiper.destroy();
+                }
+            }
+        }
+
+        function toggleBrandsList() {
+            let divBrandsList = document.getElementById("brands-list");
+            let buttonToggleBrandsList = document.getElementById("brands__toggle-all");
+
+            let currentBrandsListClass = divBrandsList.className;
+
+            if(currentBrandsListClass.includes(
+                "brands-list__container--height--min"
+            )){
+                divBrandsList.className =
+                    currentBrandsListClass.replace(
+                        " brands-list__container--height--min", ""
+                    );
+
+                buttonToggleBrandsList.innerHTML = "Скрыть";
+
+            }else {
+                divBrandsList.className =
+                 `${currentBrandsListClass} brands-list__container--height--min`;
+
+                buttonToggleBrandsList.innerHTML = "Показать все";
+            }
+        }
+    </script>
+</html>
+<!-- 14:27 -->
