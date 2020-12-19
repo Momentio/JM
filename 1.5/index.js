@@ -1,8 +1,6 @@
 
 let fackedSwiper;
 
-initSwiper();
-
 function initSwiper() {
     try{
         if(fackedSwiper){
