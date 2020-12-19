@@ -20,7 +20,6 @@ function initSwiper() {
         }else{
             if(fackedSwiper){
                 fackedSwiper.detachEvents();
-                fackedSwiper.destroy();
             }
         }
 
