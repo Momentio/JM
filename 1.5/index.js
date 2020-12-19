@@ -6,24 +6,22 @@ initSwiper();
 function initSwiper() {
     try{
         if(Number(document.body.offsetWidth) < 768){
-            if(!fackedSwiper){
-                fackedSwiper = new Swiper('.swiper-container', {
-                    pagination: {
-                        el: '.swiper-pagination',
-                    },
-                });
-    
-            }else{
-                fackedSwiper.attachEvents();
+            if(fackedSwiper){
+                fackedSwiper.destroy();
             }
+
+            fackedSwiper = new Swiper('.swiper-container', {
+                pagination: {
+                    el: '.swiper-pagination',
+                },
+            });
     
         }else{
             if(fackedSwiper){
                 fackedSwiper.detachEvents();
-                fackedSwiper.destroy();
             }
         }
-
+    
     }catch(errorFromFackedSwiper){
         return true;
     }
