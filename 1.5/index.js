@@ -5,21 +5,16 @@ initSwiper();
 
 function initSwiper() {
     try{
-        if(Number(document.body.offsetWidth) < 768){
-            if(fackedSwiper){
-                fackedSwiper.destroy();
-            }
+        if(fackedSwiper){
+            fackedSwiper.destroy();
+        }
 
+        if(Number(document.body.offsetWidth) < 768){
             fackedSwiper = new Swiper('.swiper-container', {
                 pagination: {
                     el: '.swiper-pagination',
                 },
             });
-    
-        }else{
-            if(fackedSwiper){
-                fackedSwiper.detachEvents();
-            }
         }
     
     }catch(errorFromFackedSwiper){
