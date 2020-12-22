@@ -121,6 +121,7 @@ body{
     list-style: none;
     padding: 0;
     margin: 0;
+    width: 100%;
 }
 
 .brands-item.brands__item{
@@ -187,7 +188,7 @@ body{
     animation-duration: 666ms;
 }
 
-/* facked swiper */
+/* dear swiper */
 
 .brands-list .swiper-pagination{
     margin-top: 16px;
@@ -219,12 +220,10 @@ body{
         max-height: none;
     }
 
-    .brands-item{
+    .brands-item.brands__item{
         margin-right: 16px;
         padding: 20px 16px;
-        min-width: 240px;
         width: 240px;
-        max-width: 240px;
     }
 
     .toggle-all.brands__toggle-all{
@@ -248,23 +247,20 @@ body{
 
     .brands-list__container{
         flex-wrap: wrap;
-        max-width: 800px;
     }
 
     .brands-list__container--height--min{
         max-height: 178px;
     }
 
-    .brands-item{
+    .brands-item.brands__item{
         margin-top: 16px;
         margin-right: 24px;
         padding: 12px 16px;
-        min-width: 224px;
-        width: 224px;
-        max-width: 224px;
+        width: calc(33.33% - 24px);
     }
 
-    .brands-item:nth-child(3n){
+    .brands-item.brands__item:nth-child(3n){
         margin-right: 0;
     }
 
@@ -290,27 +286,24 @@ body{
 
     .brands-list__container{
         flex-wrap: wrap;
-        max-width: 1120px;
     }
 
     .brands-list__container--height--min{
         max-height: 178px;
     }
 
-    .brands-item{
+    .brands-item.brands__item{
         margin-top: 16px;
         margin-right: 32px;
         padding: 20px 16px;
-        min-width: 240px;
-        width: 240px;
-        max-width: 240px;
+        width: calc(25% - 32px);
     }
 
-    .brands-item:nth-child(3n){
+    .brands-item.brands__item:nth-child(3n){
         margin-right: 32px;
     }
 
-    .brands-item:nth-child(4n){
+    .brands-item.brands__item:nth-child(4n){
         margin-right: 0;
     }
 

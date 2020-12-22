@@ -1,22 +1,27 @@
+window.addEventListener("load", initSwiper);
+window.addEventListener("resize", initSwiper);
 
-let fackedSwiper;
+document.getElementById("brands__toggle-all").addEventListener(
+    "click", toggleBrandsList, true
+);
+
+let dearSwiper;
 
 function initSwiper() {
-    try{
-        if(fackedSwiper){
-            fackedSwiper.destroy();
-        }
+    // Пост покинут)
+    if(dearSwiper){
+        dearSwiper.destroy();
+    }
 
-        if(Number(document.body.offsetWidth) < 768){
-            fackedSwiper = new Swiper('.swiper-container', {
-                pagination: {
-                    el: '.swiper-pagination',
-                },
-            });
-        }
-    
-    }catch(errorFromFackedSwiper){
-        return true;
+    if(Number(document.body.offsetWidth) < 768){
+        dearSwiper = new Swiper('.swiper-container', {
+            pagination: {
+                clickable: true,
+                el: '.swiper-pagination',
+            },
+            loop: true,
+            slidesPerView: 'auto',
+        });
     }
 }
 
