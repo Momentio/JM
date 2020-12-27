@@ -1,0 +1,28 @@
+@import "../variables/variables.scss";
+
+.main-title{
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+}
+
+@media screen and (max-width:320px), screen and (min-width:320px){
+  .main-title{
+      padding: 0 16px;
+  }
+}
+
+@media screen and (min-width:768px){
+  .main-title{
+    padding: 0 24px;
+  }
+}
+
+@media screen and (min-width:1440px){
+  .main-title{
+    padding: 0 32px;
+  }
+}

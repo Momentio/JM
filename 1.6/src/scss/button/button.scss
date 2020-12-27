@@ -1,0 +1,54 @@
+@import "../variables/variables.scss";
+
+.button{
+  display: flex;
+  font-family: $themeFont;
+  outline: none;
+  border: none;
+  background: inherit;
+  padding: 0;
+  font-family: inherit;
+  color: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: -0.2px;
+  line-height: 24px;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.button--style--action{
+    height: 32px;
+    background: #FF3E79;
+    border-radius: 16px;
+    font-family: TT Lakes;
+    font-size: 12px;
+    letter-spacing: -0.15px;
+    text-align: left;
+    text-transform: uppercase;
+    color: $themeColor4;
+    padding: 4px;
+    padding-left: 12px;
+    transition-duration: 400ms;
+}
+
+.button--style--action::after{
+    height: 24px;
+    width: 24px;
+    padding: 1px;
+    margin-left: 8px;
+    text-align: center;
+    border-radius: 12px;
+    content: url("../img/dropdown.svg");
+    background: #FF3E79;
+}
+
+.button--style--action:hover{
+    box-shadow: 0 0 5px 0 #FF3E79;
+}
+
+.button--style--action:focus{
+    background: $themeColor4;
+    color: #FF3E79;
+    box-shadow: 0 0 3px 2px #FF3E79;
+}

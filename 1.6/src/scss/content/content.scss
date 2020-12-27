@@ -1,0 +1,15 @@
+@import "../variables/variables.scss";
+
+.content{
+  display: flex;
+  flex-direction: column;
+  background: $themeColor6;
+  overflow: hidden;
+  width: 100%;
+}
+
+@media screen and (min-width:1440px){
+    .content{
+        max-width: 1120px;
+    }
+}

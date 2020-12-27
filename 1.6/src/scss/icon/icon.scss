@@ -1,0 +1,48 @@
+@import "../variables/variables.scss";
+
+.icon::after{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background: $themeColor1;
+    padding: 11px;
+    border-radius: 20px;
+    transition-duration: 200ms;
+    text-align: center;
+}
+
+.icon:hover::after{
+    transform: scale(0.9);
+}
+
+.icon--menu::after{
+    content: url("../img/menu.svg");
+}
+
+.icon--chat::after{
+    content: url("../img/chat.svg");
+}
+
+.icon--user::after{
+    content: url("../img/user.svg");
+}
+
+.icon--phone::after{
+    content: url("../img/phone.svg");
+}
+
+.icon--instruments::after{
+    content: url("../img/instruments.svg");
+}
+
+.icon--contacts::after{
+    content: url("../img/contacts.svg");
+}
+
+.icon--close::after{
+    content: url("../img/close.svg");
+}
+
+.icon--search::after{
+    content: url("../img/search.svg");
+}

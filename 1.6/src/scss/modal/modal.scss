@@ -1,0 +1,35 @@
+@import "../variables/variables.scss";
+
+@keyframes showModal{
+    from{
+        transform:  scale(0);
+        box-shadow: 0 0 10px 10px $themeColor1;
+    }
+
+    to{
+        transform:  scale(1);
+        box-shadow: none;
+    }
+}
+
+.modal{
+    display: none;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1000000;
+}
+
+.modal--show{
+    display: flex;
+    animation: showModal 300ms ease-out;
+}
+
+.modal__container{
+    display: flex;
+    background: rgba(256, 256, 256, 0.96);
+    width: 100%;
+}

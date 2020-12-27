@@ -1,0 +1,79 @@
+@import "../variables/variables.scss";
+
+@media screen and (max-width:320px), screen and (min-width:320px){
+  .main{
+    padding-bottom: 30px;
+  }
+
+  .main__title{
+      margin-top: 24px;
+  }
+
+  .main__menu{
+      display: none;
+  }
+
+  .main__navigation{
+      margin: 24px 16px;
+      margin-right: 0;
+  }
+
+  .main__about{
+      margin-bottom: 24px;
+  }
+
+  .brands.main__card{
+    margin-top: 0px;
+  }
+
+  .main__card{
+      margin-top: 0px;
+  }
+}
+
+@media screen and (min-width:768px){
+  .main{
+    padding-bottom: 37px;
+  }
+
+  .main__navigation{
+      margin: 32px 24px;
+      margin-right: 0;
+  }
+
+  .main__about{
+      margin-bottom: 32px;
+  }
+
+  .main__card{
+      margin-top: 8px;
+  }
+}
+
+@media screen and (min-width:1440px){
+  .main{
+    padding-bottom: 40px;
+  }
+
+  .main__title{
+      margin-top: 42px;
+  }
+
+  .main__menu{
+      display: flex;
+  }
+  
+  .main__navigation{
+    margin-left: 32px;
+    margin-top: 8px;
+    margin-bottom: 16px;
+  }
+
+  .main__about{
+      margin-bottom: 50px;
+  }
+  
+  .main__card{
+      margin-top: 26px;
+  }
+}

@@ -1,0 +1,129 @@
+@import "../variables/variables.scss";
+
+.price-list{
+    .table__cell:nth-child(1){
+      width: 40%;
+    }
+}
+
+.price-list__buy{
+    width: 119px;
+    margin-left: auto;
+}
+
+.price-list__section{
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.price-list__section:last-child{
+    margin-bottom: 0;
+}
+
+.price-list__info{
+    font-size: 14px;
+    font-weight: 500;
+    white-space: normal;
+    word-break: break-all;
+}
+
+.price-list__title{
+  line-height: 18px;
+  letter-spacing: 0.2px;
+  color: $themeColor7;
+}
+
+.price-list__description{
+    margin-top: 4px;
+    width: 100%;
+    line-height: 16px;
+    color: $themeColor8;
+}
+
+.price-list__NDS{
+    max-width: 421px;
+    font-size: 14px;
+}
+
+.price-list__NDS{
+    max-width: 421px;
+}
+
+.price-list__commercial{
+    margin-top: 16px;
+    display: inline-block;
+}
+
+.price-list__commercial::after{
+    margin-left: 5px;
+    content: url("../img/Line.svg");
+    vertical-align: middle;
+}
+
+@media  screen and (max-width:320px), screen and (min-width:320px){
+    .price-list{
+        .table{
+            display: none;
+        }
+
+        .card__body{
+            padding: 16px 8px;
+        }
+
+        .tiles__tile{
+            height: 200px;
+            width: 260px;
+            border: none;
+        }
+    }
+
+    .price-list__NDS{
+        margin: 0 8px;
+        margin-top: 16px;
+    }
+
+    .price-list__commercial{
+        margin-right: 8px;
+        margin-left: 8px;
+    }
+}
+
+@media screen and (min-width:768px){
+    .price-list{
+        .table{
+            display: table;
+        }
+
+        .card__body{
+            padding: 16px 24px;
+        }
+
+        .tiles{
+            display: none;
+        }
+    }
+
+    .price-list__NDS{
+        margin: 0;
+        margin-top: 24px;
+    }
+
+    .price-list__commercial{
+        margin-right: 0;
+        margin-left: 0;
+    }
+}
+
+@media screen and (min-width:1120px){
+    .price-list{
+        .card__body{
+            padding: 16px 32px;
+        }
+    }
+
+    .price-list__NDS{
+        margin-top: 32px;
+    }
+}

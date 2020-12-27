@@ -1,0 +1,117 @@
+@import "../variables/variables.scss";
+
+@keyframes left-left{
+    from{
+        background: url("../img/left.svg") no-repeat 50% 50%;
+    }
+    25%{
+        background: url("../img/left.svg") no-repeat 70% 50%;
+    }
+    50%{
+        background: url("../img/left.svg") no-repeat 50% 50%;
+    }
+    75%{
+        background: url("../img/left.svg") no-repeat 70% 50%;
+    }
+    to{
+        background: url("../img/left.svg") no-repeat 50% 50%;
+    }
+}
+
+.tiles{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    overflow: hidden;
+}
+
+.tiles__tile{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 16px;
+    border-radius: 6px;
+    background: $themeColor4;
+    border: 1px solid $themeColor5;
+    overflow: hidden;
+}
+
+.tiles__tile:hover{
+    filter: drop-shadow(0 0 5px $themeColor5);
+}
+
+.tiles__tile-link{
+    display: flex;
+    flex: none;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+}
+
+.tiles__tile-link::after{
+    display: flex;
+    flex: none;
+    margin-top: auto;
+    height: 40px;
+    width: 40px;
+    border: #FF3E79 solid 2px;
+    border-radius: 20px;
+    background: url("../img/left.svg") no-repeat 50% 50%;
+    content: "";
+    margin-left: 4px;
+}
+
+.tiles__tile-link:hover::after{
+    animation-name: left-left;
+    animation-duration: 500ms;
+}
+
+.tiles__tile-image{
+    max-width: 100px;
+    max-height: 40px;
+}
+
+@media  screen and (max-width:320px), screen and (min-width:320px){
+    .tiles{
+        gap: 16px;
+    }
+
+    .tiles__tile{
+        width: 240px;
+    }
+}
+
+@media screen and (min-width:768px){
+    .tiles{
+        flex-wrap: wrap;
+        gap: 16px 24px;
+    }
+
+    .tiles__tile{
+        width: calc(33.33% - 24px);
+    }
+    
+    .tiles__tile:nth-child(3n){
+        margin-right: 0;
+    }
+}
+
+@media screen and (min-width:1120px){
+    .tiles{
+        gap: 16px 32px;
+    }
+
+    .tiles__tile{
+        width: calc(25% - 32px);
+    }
+    
+    .tiles__tile:nth-child(3n){
+        margin-right: 0;
+    }
+    
+    .tiles__tile:nth-child(4n){
+        margin-right: 0;
+    }
+}

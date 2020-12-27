@@ -1,0 +1,67 @@
+@import "./variables/variables.scss";
+@import "./wrapper/wrapper.scss";
+@import "./link/link.scss";
+@import "./list/list.scss";
+@import "./button/button.scss";
+@import "./image/image.scss";
+@import "./icon/icon.scss";
+@import "./content/content.scss";
+@import "./header/header.scss";
+@import "./main-title/main-title.scss";
+@import "./main-menu/main-menu.scss";
+@import "./main-navigation/main-navigation.scss";
+@import "./main-about/main-about.scss";
+@import "./toggle-all/toggle-all.scss";
+@import "./sidebar/sidebar.scss";
+@import "./sidebar-header/sidebar-header.scss";
+@import "./sidebar-main/sidebar-main.scss";
+@import "./sidebar-navigation/sidebar-navigation.scss";
+@import "./sidebar-footer/sidebar-footer.scss";
+@import "./slider/slider.scss";
+@import "./card/card.scss";
+@import "./tiles/tiles.scss";
+@import "./brands/brands.scss";
+@import "./technics/technics.scss";
+@import "./price-list/price-list.scss";
+@import "./table/table.scss";
+@import "./footer/footer.scss";
+@import "./modal/modal.scss";
+@import "./form/form.scss";
+@import "./h/h.scss";
+@import "./p/p.scss";
+@import "./modal-feedback/modal-feedback.scss";
+@import "./main/main.scss";
+@import "./highlight/highlight.scss";
+
+*, *::after, *::before{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+@font-face{
+  font-family: "TT Lakes";
+  src: url("../fonts/TTLakes-Bold.ttf") format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: "TT Lakes";
+  src: url("../fonts/TTLakes-Medium.ttf") format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: "TT Lakes";
+  src: url("../fonts/TTLakes-Regular.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body{
+  font-family: $themeFont;
+  background: $themeColor4;
+}
+

@@ -1,0 +1,56 @@
+@import "../variables/variables.scss";
+
+@keyframes go-go{
+    0%{
+        transform: translateY(0);
+    }
+    12%{
+        transform: translateY(4px);
+    }
+    24%{
+        transform: translateY(0);
+    }
+    36%{
+        transform: translateY(4px);
+    }
+    50%{
+        transform: rotate(180deg) translateY(0);
+    }
+    62%{
+        transform: rotate(180deg) translateY(-4px);
+    }
+    74%{
+        transform: rotate(180deg) translateY(0);
+    }
+    88%{
+        transform: rotate(180deg) translateY(-4px);
+    }
+    98%{
+        transform: rotate(180deg) translateY(0);
+    }
+    100%{
+        transform: rotate(180deg) translateY(0);
+    }
+}
+
+.toggle-all{
+    display: flex;
+    align-items: center;
+    height: 24px;
+    cursor: pointer;
+}
+
+.toggle-all::before{
+    display: inline-block;
+    content:"";
+    width: 8px;
+    height: 10px;
+    background: url("../img/bottom.svg") repeat-y;
+    margin-left: 8px;
+    margin-right: 16px;
+}
+
+.toggle-all:hover::before{
+    animation-name: go-go;
+    animation-duration: 666ms;
+}

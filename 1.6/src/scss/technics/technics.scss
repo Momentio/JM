@@ -1,0 +1,32 @@
+@import "../variables/variables.scss";
+
+.technics{
+    .tiles__tile{
+        height: 160px;
+    }
+
+    .tiles__tile:hover .tiles__tile-link{
+        color: $themeColor1;
+    }
+}
+
+@media  screen and (max-width:320px), screen and (min-width:320px){
+    .technics__list--height--min{
+        max-height: none;
+    }
+
+    .technics__toggle-all{
+        display: none;
+    }
+}
+
+@media screen and (min-width:768px){
+    .technics__list--height--min{
+        max-height: 176px;
+    }
+
+    .technics__toggle-all{
+        display: inline-block;
+        margin-top: 16px;
+    }
+}

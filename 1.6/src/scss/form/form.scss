@@ -1,0 +1,67 @@
+@import "../variables/variables.scss";
+
+.form{
+    display: flex;
+    flex-direction: column;
+}
+
+.form__control{
+    display: inline-block;
+    width: 100%;
+    padding: 12px 16px;
+    background: $themeColor4;
+    border: 1px solid $themeColor5;
+    border-radius: 8px;
+    font-family: $themeFont;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: #B5B6BC;
+    outline: none;
+    transition-duration: 400ms;
+}
+
+.form__control::placeholder{
+    color: inherit;
+    font-size: inherit;
+}
+
+.form__control:hover{
+    box-shadow: 0 0 3px 1px $themeColor1;
+}
+
+.form__control:focus{
+    box-shadow: 0 0 2px 2px $themeColor1;
+    color: $themeColor1;
+}
+
+.form__control--type--text{
+    height: 48px;
+}
+
+.form__control--type--textarea{
+    height: 118px;
+    resize: none;
+    overflow: auto;
+}
+
+.form__text-agree{
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: normal;
+    color: $themeColor7;
+    white-space: normal;
+}
+
+.form__text-agree--selected{
+    color: $themeColor1;
+}
+
+@media  screen and (max-width:320px), screen and (min-width:320px){
+}
+
+@media screen and (min-width:768px){
+}
+
+@media screen and (min-width:1120px){
+}

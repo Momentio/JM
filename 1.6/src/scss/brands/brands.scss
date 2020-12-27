@@ -1,0 +1,37 @@
+@import "../variables/variables.scss";
+
+.brands{
+    .tiles__tile{
+        height: 72px;
+    }
+}
+
+.brands__logo{
+    margin: auto 0;
+}
+
+.brands__logo:hover{
+    filter: opacity(0.7);
+}
+
+
+@media  screen and (max-width:320px), screen and (min-width:320px){
+    .brands__list--height--min{
+        max-height: none;
+    }
+    
+    .brands__toggle-all{
+        display: none;
+    }
+}
+
+@media screen and (min-width:768px){
+    .brands__list--height--min{
+        max-height: 170px;
+    }
+    
+    .brands__toggle-all{
+        margin-top: 16px;
+        display: inline-block;
+    }
+}
