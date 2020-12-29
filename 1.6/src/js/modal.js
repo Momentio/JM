@@ -9,10 +9,21 @@ modalIds.forEach(id => {
         }, false);
     });
 
-    document.querySelectorAll(`#${id} .icon--close, #${id} > .modal__container`).forEach(element => {
+    document.querySelectorAll(`#${id} .icon--close`).forEach(element => {
         element.addEventListener("click", function() {
             toggleModalHandler(false, id);
         }, false);
+    });
+    
+
+    document.querySelectorAll(`#${id} > .modal__container`).forEach(element => {
+        element.addEventListener(
+            "click", (e) => {
+                if(e.target.className.includes("modal__container")){
+                    toggleModalHandler(false, id);
+                }
+            }, true
+        );
     });
 });
 
