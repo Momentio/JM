@@ -1,16 +1,14 @@
+document.getElementById("sidebar").addEventListener(
+    "click", (e) => {
+        if(e.target.id === "sidebar") toggleSidebar();
+    }, true
+);
+
 document.getElementById("header__sidebar-toggle").addEventListener(
     "click", toggleSidebar, true
 );
 
 document.getElementById("sidebar-header__sidebar-toggle").addEventListener(
-    "click", toggleSidebar, true
-);
-
-document.getElementById("header__sidebar-toggle").addEventListener(
-    "click", toggleSidebar, true
-);
-
-document.querySelector(".sidebar").addEventListener(
     "click", toggleSidebar, true
 );
 
