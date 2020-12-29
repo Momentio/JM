@@ -843,7 +843,7 @@
 
 @media screen and (max-width: 320px), screen and (min-width: 320px) {
   .tiles {
-    gap: 16px; }
+    gap: 0; }
   .tiles__tile {
     width: 240px; } }
 

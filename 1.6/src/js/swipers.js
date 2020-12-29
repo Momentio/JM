@@ -21,12 +21,11 @@ function initSwipers() {
                     clickable: true,
                     el: `.${categoryName}__swiper-pagination`,
                 },
-                loop: true,
                 direction: "horizontal",
                 effect: "slide",
                 speed: 200,
-                slidesPerView: 1.2,
-                setWrapperSize: true
+                slidesPerView: "auto",
+                spaceBetween: 16
             });
         }
     });
