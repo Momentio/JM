@@ -30,6 +30,9 @@
 
 .modal__container{
     display: flex;
+    position: relative;
+    justify-content: flex-start;
+    align-items: flex-start;
     background: rgba(256, 256, 256, 0.96);
     width: 100%;
 }

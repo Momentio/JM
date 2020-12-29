@@ -9,7 +9,7 @@ modalIds.forEach(id => {
         }, false);
     });
 
-    document.querySelectorAll(`#${id} .icon--close`).forEach(element => {
+    document.querySelectorAll(`#${id} .icon--close, #${id} > .modal__container`).forEach(element => {
         element.addEventListener("click", function() {
             toggleModalHandler(false, id);
         }, false);
@@ -32,11 +32,13 @@ function toggleModalHandler(
             if(state === undefined || state === false){
                 modalDiv.className =
                     currentClass.replace(` ${modificator}`, "");
+                    document.body.style.overflow = "visible";
             }
     
         }else {
             if(state === undefined || state === true){
                 modalDiv.className = `${currentClass} ${modificator}`;
+                document.body.style.overflow = "hidden";
             }
         }
     }

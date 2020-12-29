@@ -95,7 +95,7 @@
 
 @media screen and (max-width:320px), screen and (min-width:320px){
     .sidebar-footer{
-        margin-top: 32px;
+        margin-top: auto;
     }
 
     .sidebar-footer__languages{
@@ -105,9 +105,6 @@
 }
 
 @media screen and (min-width:768px){
-    .sidebar-footer{
-        margin-top: 268px;
-    }
 
     .sidebar-footer__languages{
         margin-top: 40px;

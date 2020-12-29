@@ -6,6 +6,14 @@ document.getElementById("sidebar-header__sidebar-toggle").addEventListener(
     "click", toggleSidebar, true
 );
 
+document.getElementById("header__sidebar-toggle").addEventListener(
+    "click", toggleSidebar, true
+);
+
+document.querySelector(".sidebar").addEventListener(
+    "click", toggleSidebar, true
+);
+
 function toggleSidebar() {
     let sidebar = document.getElementById("sidebar");
 
@@ -23,6 +31,8 @@ function toggleSidebar() {
             "click", toggleSidebar, true
         );
 
+        document.body.style.overflow = "visible";
+
     }else {
         sidebar.className =
             `${currentSidebarClass} sidebar--show`;
@@ -30,5 +40,7 @@ function toggleSidebar() {
         document.getElementById("content").addEventListener(
             "click", toggleSidebar, true
         );
+
+        document.body.style.overflow = "hidden";
     }
 };

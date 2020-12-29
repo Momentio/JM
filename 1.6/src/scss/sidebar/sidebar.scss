@@ -15,39 +15,50 @@
     position: fixed;
     top: 0;
     left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    min-height: 100%;
+    z-index: 50253;
+    background: rgba(256, 256, 256, 0.96);
+}
+
+.sidebar--show{
+    display: flex;
+    animation: showSidebar 0.1s;
+}
+
+.sidebar__body{
+    display: flex;
+    flex-direction: column;
     box-shadow: 
         -2px 0px 4px rgba(69, 79, 126, 0.02),
         16px 0px 52px rgba(14, 24, 80, 0.2);
     min-height: 100%;
     background: $themeColor4;
-    z-index: 50253;
 }
 
-.sidebar--show{
-    display: flex;
-    animation: showSidebar 0.2s;
-}
 
 @media screen and (max-width:320px), screen and (min-width:320px){
-    .sidebar{
-        width: 100%;
-    }
-}
-
-@media screen and (min-width:360px){
-    .sidebar{
+    .sidebar__body{
         width: 100%;
     }
 }
 
 @media screen and (min-width:768px){
-    .sidebar{
+    .sidebar__body{
         width: 320px;
     }
 }
 
 @media screen and (min-width:1440px){
     .sidebar{
+        display: flex;
+        position: relative;
+        width: 320px;
+    }
+    
+    .sidebar__body{
         display: flex;
         position: relative;
         box-shadow: none;
